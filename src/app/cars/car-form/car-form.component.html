@@ -1,0 +1,86 @@
+<!--
+make: String,
+model: String,
+year: Number,
+fuel: String,
+engine_size: Number,
+transmission: String,
+drivetrain: String,
+body: String,
+imagelink: String,
+tags: [String]
+-->
+
+<form [formGroup]="carForm" (ngSubmit) = "onSubmit()">
+    <!-- Make -->
+    <div>
+        <label for="make">Make</label>
+        <input (ngModelChange)="sendUpdateData()" type="text" class="form-control" id="make" aria-describedby="Input Make" formControlName="make">
+    </div>
+
+    <br>
+    <!-- Model -->
+    <div>
+        <label for="model">Model</label>
+        <input (ngModelChange)="sendUpdateData()" type="text" class="form-control" id="model" aria-describedby="Input Model"  formControlName="model">
+    </div>
+
+    <br>
+    <!-- Year -->
+    <div>
+        <label for="year">Year</label>
+        <input (ngModelChange)="sendUpdateData()" type="number" class="form-control" id="year" aria-describedby="Input Year"  formControlName="year">
+    </div>
+
+    <br>
+    <!-- Fuel -->
+    <div>
+        <label for="fuel">Fuel</label>
+        <input (ngModelChange)="sendUpdateData()" type="text" class="form-control" id="fuel" aria-describedby="Input Fuel"  formControlName="fuel">
+    </div>
+
+    <br>
+    <!-- Engine Size -->
+    <div>
+        <label for="engine_size">Engine Size</label>
+        <input (ngModelChange)="sendUpdateData()" type="number" class="form-control" id="engie_size" aria-describedby="Input Make"  formControlName="engine_size">
+    </div>
+
+    <br>
+    <!-- Transmission -->
+    <div>
+        <label for="transmission">Transmission</label>
+        <input (ngModelChange)="sendUpdateData()" type="text" class="form-control" id="transmission" aria-describedby="Input Make"  formControlName="transmission">
+    </div>
+
+    <br>
+    <!-- Drivetrain -->
+    <div>
+        <label for="drivetrain">Drivetrain</label>
+        <input (ngModelChange)="sendUpdateData()" type="text" class="form-control" id="drivetrain" aria-describedby="Input Make"  formControlName="drivetrain">
+    </div>
+
+    <br>
+    <!-- Body -->
+    <div>
+        <label for="body">Body</label>
+        <input (ngModelChange)="sendUpdateData()" type="text" class="form-control" id="body" aria-describedby="Input Make"  formControlName="body">
+    </div>
+
+    <br>
+    <!-- Link to image -->
+    <div>
+        <label for="imagelink">Image Link</label>
+        <input (ngModelChange)="sendUpdateData()" type="text" class="form-control" id="imagelink" aria-describedby="Input Make"  formControlName="imagelink">
+    </div>
+
+    <br>
+
+    <!-- Tags -->
+    
+
+    <br>
+
+    <button (ngModelChange)="sendUpdateData()" type="submit" class="btn btn-primary">Submit</button>
+
+</form>

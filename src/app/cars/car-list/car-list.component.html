@@ -1,0 +1,9 @@
+
+<h2 *ngIf="message">{{message}}</h2>
+
+<app-car-row *ngFor="let c of carList"
+[icar]="c" (click)="clicked(c)"></app-car-row>
+
+<app-selected-car *ngIf="currentCar" [icar]="currentCar">
+
+</app-selected-car>
