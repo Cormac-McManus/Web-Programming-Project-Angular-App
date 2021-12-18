@@ -1,0 +1,22 @@
+<body style="min-height: 100vh;">
+    <div class="container" style="text-align: center; padding: 20px;">
+      <button style="width: 60vw;" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasExample">
+        Add Vehicle
+      </button>
+    </div>
+  
+  
+    <!---------------------------------------- Off canvas element ---------------------------------------->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Add new vehicle</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <app-car-form></app-car-form>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------->
+  
+    <app-car-list></app-car-list>
+  </body>

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { resetFakeAsyncZone } from '@angular/core/testing';
+
 
 @Component({
   selector: 'app-root',
